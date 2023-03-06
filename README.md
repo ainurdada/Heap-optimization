@@ -1,4 +1,4 @@
-# Heap-optimization ![](https://img.shields.io/badge/algorithm-ready-brightgreen) ![](https://img.shields.io/badge/documentation-on%20working-red)
+# Heap optimization ![](https://img.shields.io/badge/algorithm-ready-brightgreen) ![](https://img.shields.io/badge/documentation-on%20working-red)
 The structure of a heap can be represented as a tree in which each element has its own ordered index, its (two) "children" and its (one) "parent".  
 ![](Images/HeapTree.jpg)  
 If we know the index of a node, we can also find out the indexes of its parent and children.  
