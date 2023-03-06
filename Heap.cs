@@ -6,6 +6,7 @@ public class Heap<T> where T : IHeapItem<T>
     int currentItemCount;
     public int Count => currentItemCount;
     public Heap(int maxHeapSize) => items = new T[maxHeapSize];
+    
     public void Add(T item)
     {
         item.heapIndex = currentItemCount;
@@ -48,6 +49,7 @@ public class Heap<T> where T : IHeapItem<T>
             else return;
         }
     }
+    
     void SortUp(T item)
     {
         int parentIndex = (item.heapIndex - 1) / 2;
@@ -59,6 +61,7 @@ public class Heap<T> where T : IHeapItem<T>
             parentIndex = (item.heapIndex - 1) / 2;
         }
     }
+    
     void Swap(T itemA, T itemB)
     {
         items[itemA.heapIndex] = itemB;
