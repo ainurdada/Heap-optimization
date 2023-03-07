@@ -66,7 +66,7 @@ public class Heap<T> where T : IHeapItem<T>
     {
         items[itemA.heapIndex] = itemB;
         items[itemB.heapIndex] = itemA;
-        int itemAIndex = itemB.heapIndex;
+        int itemAIndex = itemA.heapIndex;
         itemA.heapIndex = itemB.heapIndex;
         itemB.heapIndex = itemAIndex;
     }
